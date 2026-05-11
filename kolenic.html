@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clean list of HTML elements without IDs or styles">
+    <title>HTML Element Showcase (Clean)</title>
+    <link rel="stylesheet" href="haneyshane.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Comprehensive HTML Elements Showcase</h1>
+        <p>This document contains a wide variety of HTML tags in their natural state.</p>
+        <nav>
+            <ul>
+                <li><a href="#sectioning">Sectioning</a></li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>Sectioning Elements</h2>
+            <article>
+                <h3>Article Element</h3>
+                <p>Articles are for self-contained compositions.</p>
+            </article>
+            <aside>
+                <h4>Aside Element</h4>
+                <p>This is secondary content, like a sidebar.</p>
+            </aside>
+            <section>
+                <h5>Subsection</h5>
+                <h6>Smallest Heading</h6>
+            </section>
+        </section>
+
+        <section>
+            <h2>Text Content & Formatting</h2>
+            <p>Standard paragraph with <strong>strong text</strong> and <em>emphasized text</em>.</p>
+            <p>Inline tags: 
+                <abbr title="HyperText Markup Language">HTML</abbr>, 
+                <cite>Author Name</cite>, 
+                <code>const x = 10;</code>, 
+                <dfn>Definition</dfn>, 
+                <kbd>Ctrl</kbd> + <kbd>S</kbd>,
+                <mark>highlighted text</mark>,
+                <q>This is an inline quote.</q>,
+                <s>strikethrough</s>,
+                <small>small print</small>,
+                <span>generic span</span>,
+                <sub>subscript</sub>,
+                <sup>superscript</sup>,
+                <time datetime="2026-01-01">New Year</time>,
+                <u>underline</u>,
+                <var>x</var>.
+            </p>
+            
+            <blockquote cite="https://example.com">
+                "Logic will get you from A to B. Imagination will take you everywhere."
+            </blockquote>
+
+            <hr>
+
+            <div>
+                <p>Lists:</p>
+                <ul>
+                    <li>Bullet 1</li>
+                    <li>Bullet 2</li>
+                </ul>
+                <ol>
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                </ol>
+                <dl>
+                    <dt>Term 1</dt>
+                    <dd>Definition 1</dd>
+                </dl>
+            </div>
+
+            <figure>
+                <pre>
+function hello() {
+    console.log("Hello, World!");
+}
+                </pre>
+                <figcaption>Fig 1: A code example in a pre block.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Multimedia & Embedded</h2>
+            <img src="https://via.placeholder.com/100" alt="Placeholder">
+            <br>
+            <video width="300" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+            <iframe src="about:blank" title="blank frame" width="200" height="100"></iframe>
+            <!--
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="20" fill="green" />
+            </svg>
+            <canvas width="100" height="50"></canvas>
+        -->
+        </section>
+
+        <section>
+            <h2>Table</h2>
+            <table>
+                <caption>Inventory Data</caption>
+                <colgroup>
+                    <col style="background-color:#eee">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apples</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>50</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Forms</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    
+                    <label>Name:
+                        <input type="text" name="username" placeholder="John Doe">
+                    </label>
+                    
+                    <br>
+
+                    <label>Password:
+                        <input type="password" name="pwd">
+                    </label>
+
+                    <br>
+
+                    <label>Email:
+                        <input type="email" name="email">
+                    </label>
+
+                    <br>
+
+                    <p>Gender:</p>
+                    <input type="radio" name="gender" value="m"> <label>Male</label>
+                    <input type="radio" name="gender" value="f"> <label>Female</label>
+
+                    <br>
+
+                    <label>Country:</label>
+                    <select name="country">
+                        <optgroup label="North America">
+                            <option value="usa">USA</option>
+                            <option value="can">Canada</option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+
+                    <label>Bio:</label>
+                    <textarea name="bio" rows="3"></textarea>
+
+                    <br>
+
+                    <label>Search:</label>
+                    <input type="search" list="search-suggestions">
+                    <datalist id="search-suggestions">
+                        <option value="HTML Elements">
+                        <option value="CSS Selectors">
+                    </datalist>
+
+                    <br>
+
+                    <label>Volume:</label>
+                    <input type="range" min="0" max="100">
+
+                    <br>
+
+                    <button type="submit">Submit Button</button>
+                    <button type="reset">Reset Button</button>
+                </fieldset>
+                
+                <p>Task Progress:</p>
+                <progress value="45" max="100"></progress>
+                <meter min="0" max="100" value="80" low="33" high="66" optimum="90">High</meter>
+                <output>50</output>
+            </form>
+        </section>
+
+        <section>
+            <h2>Interactive</h2>
+            <details>
+                <summary>Click for more info</summary>
+                <p>This content was hidden until you clicked the summary.</p>
+            </details>
+            <dialog open>
+                This is an open dialog box.
+            </dialog>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HTML Elements Catalog</p>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">The Web Architect</a><br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </footer>
+
+    <template>
+        <div>
+            <h2></h2>
+            <p></p>
+        </div>
+    </template>
+
+    <script>
+        console.log("Document fully loaded.");
+    </script>
+</body>
+</html>
